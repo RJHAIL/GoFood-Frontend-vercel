@@ -38,7 +38,7 @@ const Verify = () => {
 
     try {
       // Send verification request to the backend
-      const { data } = await axios.post("http://localhost:4000/api/order/verify", {
+      const { data } = await axios.post("https://go-food-backend-vercel-kt2k1dpf9.vercel.app/api/order/verify", {
         orderId,
         razorpay_payment_id,
         razorpay_order_id,
